@@ -12,6 +12,8 @@ void main() {
   // Variables
 
 
+  // variable string
+
   var myString = "Esto es una cadena de texto";
   myString = "Aquí cambie el valor de la cadena de texto";
   // helloDart = 6;  Error
@@ -22,6 +24,7 @@ void main() {
   print(myString2);
 
 
+  // variable int
   var myInt = 7;
   myInt = myInt + 4;
   print(myInt);
@@ -34,6 +37,7 @@ void main() {
 
   // ----------
 
+  // variable double
   var myDouble = 6.5;
   print(myDouble);
 
@@ -45,6 +49,7 @@ void main() {
 
   // -----------
 
+  // variable bool
   var myBool = false;
   myBool = true;
   print(myBool);
@@ -67,6 +72,7 @@ void main() {
 
   // -----------
 
+  // Condicional
   if (myInt == 10 && myString == "Hola"){
     print("El valor es 10");
   } else if (myInt == 11 || myString == "Hola"){
@@ -75,10 +81,13 @@ void main() {
     print("El valor no es 10 ni 11");
   }
 
+  // Llamando a la función 
   myFunction();
+
   var myReturn = myFunctionWithReturn();
   print(myReturn);
 
+  //Lista
   var myList = ["Brais", "Moure", "mouredev", "Brais"];
   print(myList);
   print(myList[0]);
@@ -99,15 +108,17 @@ void main() {
 
   // ---------------
 
+  // for
 
   for (final value in myList){
     print(value);
   }
 
 
-
   var myCounter = 0;
 
+
+  // while
 
   while (myCounter <= myInt){
     print(myCounter);
@@ -118,6 +129,7 @@ void main() {
   }
 
 
+  // clase
   var myClass = MyClass("Brais", 35);
   print(myClass.name);
   print(myClass.age);
@@ -138,17 +150,19 @@ void main() {
 
 
 
-
+// función sin retorno
 void myFunction(){
   print("Esto es una función");
 }
 
 
+// Función con retorno
 String myFunctionWithReturn(){
   return "Esto es una función con retorno";
 }
 
 
+// Clase
 class MyClass {
   String name;
   int age;
@@ -158,6 +172,7 @@ class MyClass {
 }
 
 
+// Enum
 enum MyEnum { dart, python, swift, java, kotlin}
 
 
